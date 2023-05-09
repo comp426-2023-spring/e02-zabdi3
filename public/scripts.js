@@ -5,7 +5,7 @@
 function pageLoad() {
     $('.shots').hide()
     $('.rpsls').hide()
-    $('#rules').hide()
+    $('#help').hide()
     $('#result').hide()
 }
 
@@ -80,7 +80,7 @@ async function playGame() {
     $('#result').show
 }
 
-function rules() {
+function help() {
     $('#rules').toggle();
     console.log($('#rules')[0].innerText);
     if( $('#rules')[0].innerText == "Show Rules") {
