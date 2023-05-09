@@ -71,9 +71,9 @@ async function playGame() {
     if (check.checked == true) {
         document.getElementById('opponentImage').src = "./img/" + result.opponent + ".jpg";
         document.getElementById('gameResult').innerHTML = 
-        "Result: " + result.result +
-        "<br> You played: " + result.player +
-        "<br> Opponent played: " + result.opponent;
+            "Result: " + result.result +
+            "<br> You played: " + result.player +
+            "<br> Opponent played: " + result.opponent;
     } else {
         document.getElementById('gameResult').innerText = "Result: " + result.player;
     }
