@@ -1,7 +1,7 @@
 {
-  "name": "html-cs-js-demo",
-  "version": "1.0.0",
-  "description": "This is the base code for an html+css+js demo non-assignment (extra credit).",
+  "name": "rps-rpsls-demo",
+  "version": "0.0.1",
+  "description": "Final assignment for COMP426",
   "main": "server.js",
   "type": "module",
   "scripts": {
@@ -20,11 +20,23 @@
     "express",
     "server"
   ],
-  "author": "@jdmar3",
+  "author": "@jdmar3, @zabdi3",
   "license": "GPL-3.0-or-later",
   "dependencies": {
     "express": "^4.18.2",
     "minimist": "^1.2.8",
     "morgan": "^1.10.0"
-  }
+  },
+  "directories": {
+    "example": "examples",
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/comp426-2023-spring/e02-zabdi3.git"
+  },
+  "bugs": {
+    "url": "https://github.com/comp426-2023-spring/e02-zabdi3/issues"
+  },
+  "homepage": "https://github.com/comp426-2023-spring/e02-zabdi3#readme"
 }
