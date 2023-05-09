@@ -63,10 +63,9 @@ const app = express()
 const port = args.port || args.p || process.env.PORT || 8080
 // Load app middleware here to serve routes, accept data requests, etc.
 //
-
 import {rps, rpsls} from "./lib/rpsls.js"
 
-app.get('/app', (req, res) => {
+app.get('/app/', (req, res) => {
     res.status(200).send('200 OK').end();
 });
 
@@ -114,10 +113,16 @@ app.post('/app/rpsls/play/', (req, res) => {
     res.status(200).send(JSON.stringify(rpsls(req.body.shot))).end();
 });
 
-// Default
-app.all('*', (req, res) => {
-    res.status(404).send('404 NOT FOUND').end();
-})
+// // Default
+// app.all('*', (req, res) => {
+//     res.status(404).send('404 NOT FOUND').end();
+// })
+
+// Default response for any other request
+app.all('/app/*', (req, res) => {
+	res.json({"message":"404 NOT FOUND"});
+    res.status(404);
+});
 
 // Create and update access log
 // The morgan format below is the Apache Foundation combined format but with ISO8601 dates
