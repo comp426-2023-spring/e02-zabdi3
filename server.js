@@ -113,11 +113,6 @@ app.post('/app/rpsls/play/', (req, res) => {
     res.status(200).send(JSON.stringify(rpsls(req.body.shot))).end();
 });
 
-// // Default
-// app.all('*', (req, res) => {
-//     res.status(404).send('404 NOT FOUND').end();
-// })
-
 // Default response for any other request
 app.all('/app/*', (req, res) => {
 	res.json({"message":"404 NOT FOUND"});

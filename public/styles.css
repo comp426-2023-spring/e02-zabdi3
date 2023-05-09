@@ -1,8 +1,15 @@
 body {
+    font-family: 'Times New Roman', Times, serif;
 }
 
-h1 {
+h3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-p {
+#gameResult {
+    text-transform: capitalize;
+}
+
+#preloadimg {
+    display: none;
 }

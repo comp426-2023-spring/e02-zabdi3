@@ -70,10 +70,10 @@ async function playGame() {
     document.getElementById('playerImage').src = "./img/" + result.player + ".jpg";
     if (check.checked == true) {
         document.getElementById('opponentImage').src = "./img/" + result.opponent + ".jpg";
-        document.getElementById('gameResult').innerHTML =
-            "Result: " + result.result +
-            "<br> You played: " + result.player +
-            "<br> Opponent played: " + result.opponent;
+        document.getElementById('gameResult').innerHTML = 
+        "Result: " + result.result +
+        "<br> You played: " + result.player +
+        "<br> Opponent played: " + result.opponent;
     } else {
         document.getElementById('gameResult').innerText = "Result: " + result.player;
     }
@@ -81,8 +81,8 @@ async function playGame() {
 }
 
 function help() {
-    $('#rules').toggle();
-    console.log($('#rules')[0].innerText);
+    $('#help').toggle();
+    //console.log($('#rules')[0].innerText);
     if( $('#rules')[0].innerText == "Show Rules") {
         $('#rules')[0].innerText = "Hide Rules";
     } else {
